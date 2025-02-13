@@ -4,4 +4,11 @@ if SHIELD_SEIBOKU
 config ZMK_KEYBOARD_NAME
     default "SEIBOKU"
 
+# PMW3610 のデフォルトスケール値
+config PMW3610_SCALE_X
+    default 1.2
+
+config PMW3610_SCALE_Y
+    default 1.0
+
 endif

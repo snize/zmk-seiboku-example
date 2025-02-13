@@ -1,3 +1,15 @@
 # No whitespace after the comma or in your keyboard name!
 config SHIELD_SEIBOKU
     def_bool $(shields_list_contains,seiboku)
+
+config PMW3610_SCALE_X
+    float "PMW3610 X Axis Scale"
+    default 1.0
+    help
+      X 軸のスケール値を設定します。
+
+config PMW3610_SCALE_Y
+    float "PMW3610 Y Axis Scale"
+    default 1.0
+    help
+      Y 軸のスケール値を設定します。
