@@ -3,13 +3,13 @@ config SHIELD_SEIBOKU
     def_bool $(shields_list_contains,seiboku)
 
 config PMW3610_SCALE_X
-    float "PMW3610 X Axis Scale"
-    default 1.0
+    int "PMW3610 X Axis Scale (scaled by 10)"
+    default 10
     help
-      X 軸のスケール値を設定します。
+      X 軸のスケール値を 10 倍の整数として設定します (例: 1.2 → 12)。
 
 config PMW3610_SCALE_Y
-    float "PMW3610 Y Axis Scale"
-    default 1.0
+    int "PMW3610 Y Axis Scale (scaled by 10)"
+    default 10
     help
-      Y 軸のスケール値を設定します。
+      Y 軸のスケール値を 10 倍の整数として設定します (例: 1.0 → 10)。

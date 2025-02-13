@@ -6,9 +6,9 @@ config ZMK_KEYBOARD_NAME
 
 # PMW3610 のデフォルトスケール値
 config PMW3610_SCALE_X
-    default 1.2
+    default 12
 
 config PMW3610_SCALE_Y
-    default 1.0
+    default 10
 
 endif
