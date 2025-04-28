@@ -68,7 +68,9 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&xiao_d 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; //MOT
-
+        evt-type      = <2>;   /* EV_REL = 2 */
+        x-input-code  = <0>;   /* REL_X  = 0 */
+        y-input-code  = <1>;   /* REL_Y  = 1 */
     };
 };
 
