@@ -16,9 +16,22 @@ Seeed Studio XIAO nRF52840 を採用し、BLE での接続をサポートして�
 
 通常のBLEデバイスと同様に、PCやスマートフォンから接続することができます。`SEIBOKU`というデバイス名で検出されます。キーマップに`BT_CLR`をアサインしているので、デバイス側のボタンを押すことでペアリング情報を削除することができます。
 
-## キーマップの変更
 
-このプロジェクトをフォークして[seiboku.keymap](boards/shields/seiboku/seiboku.keymap)を編集してください。ビルドはGithub Actionsを利用すると環境構築が不要で簡単に行えます。
+## 設定変更
+
+このプロジェクトをフォークして編集してください。
+
+### キーマップの変更
+
+[boards/shields/seiboku/seiboku.keymap](boards/shields/seiboku/seiboku.keymap) を `config/seiboku.conf` にコピーして編集してください。
+
+### 設定の変更
+
+[boards/shields/seiboku/seiboku.conf](boards/shields/seiboku/seiboku.conf) を `config/conf.conf` にコピーして変更したい値のみ残し編集してください。
+
+## ビルド
+
+ビルドはGithub Actionsを利用すると環境構築が不要で簡単に行えます。公式のdevcontainerを利用する事もできます。[ZMK Firmwareをdevcontainerでビルドするときのディレクトリ構成｜snize](https://note.com/snize/n/n10310eaeac22)などを参考にしてみてください。
 
 ## 免責事項
 
