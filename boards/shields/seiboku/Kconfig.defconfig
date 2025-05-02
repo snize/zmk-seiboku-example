@@ -1,21 +1,26 @@
 if SHIELD_SEIBOKU
 
-config ZMK_KEYBOARD_NAME
-    default "SEIBOKU"
+    config ZMK_KEYBOARD_NAME
+        default "SEIBOKU"
 
-config INPUT  
-    default y  
-  
-config PMW3610  
-    default y  
-  
-config SPI  
-    default y  
-  
-config ZMK_BLE  
-    default y  
-  
-config ZMK_POINTING  
-    default y  
+    config INPUT
+        bool
+        default y
+
+    config PMW3610
+        bool
+        default y
+
+    config SPI
+        bool
+        default y
+
+    config ZMK_BLE
+        bool
+        default y
+
+    config ZMK_POINTING
+        bool
+        default y
 
 endif
