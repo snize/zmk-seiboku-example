@@ -1,7 +1,21 @@
 if SHIELD_SEIBOKU
 
-# Name must be less than 16 characters long!
 config ZMK_KEYBOARD_NAME
     default "SEIBOKU"
+
+config INPUT  
+    default y  
+  
+config PMW3610  
+    default y  
+  
+config SPI  
+    default y  
+  
+config ZMK_BLE  
+    default y  
+  
+config ZMK_POINTING  
+    default y  
 
 endif
