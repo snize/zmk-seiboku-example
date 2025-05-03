@@ -4,6 +4,8 @@
 
 Seeed Studio XIAO nRF52840 を採用し、BLE での接続をサポートしていますが有線での接続も可能です。
 
+本プロジェクトは学習用も兼ねており、できるだけ公式ドキュメントに沿うように作成しました。気になる点あればフィードバックお願いします。
+
 ## ファームウェアの書き込み
 
 1. [Releases](https://github.com/snize/zmk-seiboku-example/releases) から最新のファームウェア `seiboku-seeeduino_xiao_ble-zmk.uf2` をダウンロードしてください。
@@ -19,15 +21,9 @@ Seeed Studio XIAO nRF52840 を採用し、BLE での接続をサポートして�
 
 ## 設定変更
 
-このプロジェクトをフォークして編集してください。
+本リポジトリのキーボードモジュール化対応完了に伴い、ユーザが設定を変更する場合のためのテンプレートリポジトリ [zmk\-seiboku\-example\-config\-template](https://github.com/snize/zmk-seiboku-example-config-template) を用意しました。このページの右上の Use this template からご自身のリポジトリにコピーを作成し、必要に応じて config 内の `seiboku.conf` や `seiboku.keymap` を変更してください。
 
-### キーマップの変更
-
-[boards/shields/seiboku/seiboku.keymap](boards/shields/seiboku/seiboku.keymap) を `config/seiboku.conf` にコピーして編集してください。
-
-### 設定の変更
-
-[boards/shields/seiboku/seiboku.conf](boards/shields/seiboku/seiboku.conf) を `config/conf.conf` にコピーして変更したい値のみ残し編集してください。
+ユーザによる設定変更のサンプルとして、SEIBOKUを傾けて取り付けた場合のカーソルの移動量を補正するプロジェクト [zmk-seiboku-config-tilt](https://github.com/snize/zmk-seiboku-config-tilt) を用意しました。
 
 ## ビルド
 
